@@ -1,0 +1,18 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = Tarren
+	email = me@tarren.moe
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[credential "helperselector"]
+	selected = manager-core
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
