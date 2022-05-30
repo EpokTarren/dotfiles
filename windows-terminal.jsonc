@@ -1,0 +1,135 @@
+{
+	"$help": "https://aka.ms/terminal-documentation",
+	"$schema": "https://aka.ms/terminal-profiles-schema",
+	"actions": [
+		{
+			"command": { "action": "copy", "singleLine": false },
+			"keys": "ctrl+c"
+		},
+
+		{
+			"command": "paste",
+			"keys": "ctrl+v"
+		},
+
+		{
+			"command": "find",
+			"keys": "ctrl+shift+f"
+		},
+
+		{
+			"command": { "action": "moveFocus", "direction": "nextInOrder" },
+			"keys": "alt+j"
+		},
+
+		{
+			"command": { "action": "moveFocus", "direction": "previousInOrder" },
+			"keys": "alt+k"
+		},
+
+		{
+			"command": {
+				"action": "splitPane",
+				"split": "auto",
+				"splitMode": "duplicate",
+				"startingDirectory": "cd"
+			},
+			"keys": "alt+shift+d"
+		}
+	],
+	"copyFormatting": "none",
+	"copyOnSelect": false,
+	"defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+	"profiles": {
+		"defaults": {
+			// https://twitter.com/gomalio_y/status/938769975778488320
+			"backgroundImage": "C:/astolfo/67565552@2.png",
+			"backgroundImageOpacity": 0.40625,
+			"colorScheme": "umu",
+
+			"font": {
+				// https://www.nerdfonts.com/font-downloads
+				"face": "JetBrainsMono NF",
+
+				// Disables ligatures
+				"features": {
+					"calt": 0,
+					"clig": 0,
+					"dlig": 0,
+					"hist": 0,
+					"hlig": 0,
+					"liga": 0,
+					"ordn": 0,
+					"rlig": 0
+				},
+				"size": 11
+			},
+
+			"startingDirectory": "%USERPROFILE%/code/"
+		},
+		"list": [
+			{
+				"guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+				"name": "Command Prompt"
+			},
+
+			{
+				"guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+				"name": "Windows PowerShell"
+			},
+
+			{
+				"guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+				"name": "WSL Ubuntu",
+				"source": "Windows.Terminal.Wsl"
+			},
+
+			{
+				"guid": "{0e9cd11d-aa71-53dd-955b-12288ad7c089}",
+				"name": "Developer Command Prompt for VS 2022",
+				"source": "Windows.Terminal.VisualStudio"
+			},
+
+			{
+				"guid": "{0bf2383f-889e-5a58-9a9f-deb06ab444d8}",
+				"name": "Developer PowerShell for VS 2022",
+				"source": "Windows.Terminal.VisualStudio"
+			},
+
+			{
+				"guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+				"name": "Git Bash",
+				"source": "Git"
+			}
+		]
+	},
+
+	"schemes": [
+		{
+			"background": "#000000",
+			"black": "#1A2123",
+			"blue": "#1414C5",
+			"brightBlack": "#6F7367",
+			"brightBlue": "#3E3EFF",
+			"brightCyan": "#3EFFFF",
+			"brightGreen": "#3EFF3E",
+			"brightPurple": "#AA7CA4",
+			"brightRed": "#FF513E",
+			"brightWhite": "#F2F2F2",
+			"brightYellow": "#FFFECA",
+			"cursorColor": "#DFCE80",
+			"cyan": "#14C5C5",
+			"foreground": "#FBEBAD",
+			"green": "#14C514",
+			"name": "umu",
+			"purple": "#C212C2",
+			"red": "#C12028",
+			"selectionBackground": "#DFCE80",
+			"white": "#CCCCCC",
+			"yellow": "#DFCE81"
+		}
+	],
+
+	"tabWidthMode": "equal",
+	"theme": "dark"
+}
