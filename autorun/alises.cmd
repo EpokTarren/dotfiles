@@ -1,0 +1,1 @@
+C:/Users/Tarren/aliases.cmd
