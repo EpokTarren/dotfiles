@@ -30,7 +30,7 @@ let g:airline_theme = 'tarren'
 let g:airline_inactive_collapse = 0
 let g:airline_powerline_fonts = 1
 
-call plug#begin('~/.vim/plugged')
+call plug#begin()
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
