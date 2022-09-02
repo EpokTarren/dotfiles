@@ -7,16 +7,13 @@ set preserveindent
 set softtabstop=0
 set shiftwidth=4
 set smartindent
-set nu
 set nuw=5
 set noswapfile
 set incsearch
 set nohlsearch
 set hidden
 set scrolloff=8
-
 set number relativenumber
-set nu rnu
 
 if (has('nvim'))
 	let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
@@ -28,32 +25,22 @@ endif
 
 let mapleader = ","
 
-let g:rustfmt_autosave = 1
-
-let g:gitgutter_git_executable = 'C:\Program Files\Git\bin\git.exe'
-
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='tarren'
-let g:airline_inactive_collapse=0
+let g:airline_theme = 'tarren'
+let g:airline_inactive_collapse = 0
 let g:airline_powerline_fonts = 1
 
 call plug#begin('~/.vim/plugged')
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-	Plug 'leafgarland/typescript-vim'
-
 	Plug 'scrooloose/nerdtree'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
 	Plug 'ryanoasis/vim-devicons'
-	Plug 'scrooloose/nerdcommenter'
+	Plug 'preservim/nerdcommenter'
 
 	Plug 'ctrlpvim/ctrlp.vim'
-
-	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim'
-	Plug 'tpope/vim-fugitive'
-
 	Plug 'vim-airline/vim-airline'
 
 	Plug 'EpokTarren/themes.vim'
@@ -80,16 +67,13 @@ nmap <C-J> :bnext<CR>
 nmap <C-K> :bprevious<CR>
 nmap <C-W> :bdelete<CR>
 
-" Fast exit from window
-nmap <C-Q> :q<CR>
-
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" Use K to show documentation in preview window.
+" Use K to show documentation in a preview
 nmap <silent> K :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
@@ -119,5 +103,5 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 let g:theme_style = '"Girl"'
 colorscheme tarren
 
-" Reset background
+" Reset background so teminal bg shows
 hi Normal guibg=NONE ctermbg=NONE

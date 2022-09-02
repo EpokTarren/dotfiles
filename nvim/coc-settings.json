@@ -11,6 +11,5 @@
     "java",
     "rust"
   ],
-  "codeLens.enable": true,
-  "java.referencesCodeLens.enabled": true
+  "codeLens.enable": true
 }
