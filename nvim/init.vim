@@ -39,7 +39,7 @@ call plug#begin()
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'preservim/nerdcommenter'
 
-	Plug 'ctrlpvim/ctrlp.vim'
+	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim'
 	Plug 'vim-airline/vim-airline'
 
@@ -92,8 +92,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " Renaming.
 nmap <leader>rn <Plug>(coc-rename)
 
-" Find files using Telescope command-line sugar.
-nmap <leader>ff <cmd>Telescope find_files<cr>
+" Find files using Telescope.
+nmap <C-p>      <cmd>Telescope find_files<cr>
 nmap <leader>fg <cmd>Telescope live_grep<cr>
 nmap <leader>fb <cmd>Telescope buffers<cr>
 nmap <leader>fh <cmd>Telescope help_tags<cr>
