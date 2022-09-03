@@ -1,0 +1,51 @@
+import:
+    - "C:/Users/Tarren/AppData/Roaming/alacritty/theme.yml"
+
+env:
+    TERM: xterm-256color
+
+window:
+    opacity: 0.8
+
+font:
+    normal:
+        family: JetBrainsMono NF
+        style: Regular
+
+    bold:
+        family: JetBrainsMono NF
+        style: Bold
+
+    italic:
+        family: JetBrainsMono NF
+        style: Italic
+
+    bold_italic:
+        family: JetBrainsMono NF
+        style: Bold Italic
+
+    size: 11.0
+
+draw_bold_text_with_bright_colors: true
+
+bell:
+    duration: 0
+    command: None
+
+cursor:
+    style:
+        shape: Beam
+        blinking: On
+
+    vi_mode_style: Block
+    blink_interval: 500
+    unfocused_hollow: true
+    thickness: 0.15
+
+live_config_reload: true
+
+shell:
+    program: cmd
+    args:
+        - /K
+        - "cd %USERPROFILE%/code"
