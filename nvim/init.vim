@@ -98,8 +98,6 @@ nmap <leader>fg <cmd>Telescope live_grep<cr>
 nmap <leader>fb <cmd>Telescope buffers<cr>
 nmap <leader>fh <cmd>Telescope help_tags<cr>
 
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-
 let g:theme_style = '"Girl"'
 colorscheme tarren
 
