@@ -105,3 +105,9 @@ colorscheme tarren
 
 " Reset background so teminal bg shows
 hi Normal guibg=NONE ctermbg=NONE
+
+if exists("g:neovide")
+  let g:neovide_refresh_rate_idle=5
+  let g:neovide_transparency=0.8
+  let g:neovide_hide_mouse_when_typing = v:true
+endif
